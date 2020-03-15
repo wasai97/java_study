@@ -9,6 +9,7 @@ import java.util.concurrent.atomic.AtomicStampedReference;
  * 当一线程执行完的时候发现变量还是A，会执行成功，但是其实中间二线程修改了两次
  * 这就是ABA问题
  * 解决方法：AtomicStampedReference
+ * 。。。
  */
 public class ABAQuestionDemo {
     static AtomicReference<Integer> atomicReference = new AtomicReference<>(100);
